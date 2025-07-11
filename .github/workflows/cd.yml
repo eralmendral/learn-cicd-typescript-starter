@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [main]af
+    branches: [main]
     
 jobs:
 deploy:
