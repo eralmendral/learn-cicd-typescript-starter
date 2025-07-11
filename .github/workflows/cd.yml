@@ -20,7 +20,7 @@ jobs:
         run: npm ci
       - name: Build application
         run: npm run build
-      - name: Authenticate Google Cloud
+     
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
