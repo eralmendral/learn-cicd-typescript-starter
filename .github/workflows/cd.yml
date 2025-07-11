@@ -38,3 +38,6 @@ jobs:
       
       - name: Deploy to Cloud Run
         run: gcloud run deploy notely --image us-central1-docker.pkg.dev/high-verve-465602-q3/notely-ar-repo/notely:latest --platform managed --region us-central1 --allow-unauthenticated --project high-verve-465602-q3 --max-instances=4
+
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
