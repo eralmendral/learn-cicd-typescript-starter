@@ -31,6 +31,9 @@ jobs:
 
       - name: 'Use gcloud CLI'
         run: 'gcloud info'
+
+      - name: Database Migrations
+        run: npm run db:migrate
         
       - name: Deploy to Google App Engine
         run: |
